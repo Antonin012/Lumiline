@@ -1,17 +1,65 @@
-<html>
+<!DOCTYPE html>
+<html lang="fr">
+
 <head>
-	<link href="fiche.css" rel="stylesheet">
-	<meta charset="utf-8">
-	<link rel="shorcut icon" href="icons8-star-50.png">
-	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mon Projet Lumiline</title>
+	<link rel="stylesheet" href="fiche.css">
 </head>
+
 <body>
-	<div id="header"><center><h1>Voici ma page</h1></div>
-	<p><i><strong>Page instagram</strong></i>
-	<a href=https://www.instagram.com/>Page d'accueil</a>
-	</p>
-	<img style="width:100px" src=https://img.filmsactu.net/datas/films/b/o/bob-l-eponge-2/xl/bob-l-eponge-2-affiche-4f4e3e344db7a.jpg >
-	<div id="gif">
-	<center><img alt class="work-img" src="tenor.gif">
+	<header>
+		<h1>Bienvenue sur le site de mon projet Lumiline</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="#description">Description</a></li>
+			<li><a href="#schema">Schéma de câblage</a></li>
+			<li><a href="#code">Code</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</nav>
+	<main>
+		<section id="description">
+			<h2>Description</h2>
+			<p>Ce projet consiste à rendre le sol d'un gymnase lumineux. Il vise à faire disparaître les nombreux
+				marquages au sol pour les remplacer par des terrains définis par des LEDs éteignables. De plus, il sera
+				possible de changer le type de terrain à l'aide de boutons.Il utilise des dalles piézoélectrique pour
+				alimenter les leds.</p>
+		</section>
+		<section id="schema">
+			<h2>Schéma de câblage</h2>
+			<img src="schema.png" alt="Schéma de câblage du projet Arduino">
+		</section>
+		<section id="code">
+			<h2>Code</h2>
+			<pre>
+<code>
+/* Exemple de code Arduino */
+void setup() {
+    Serial.begin(9600);
+    pinMode(LED_BUILTIN, OUTPUT);
+}
+
+void loop() {
+    digitalWrite(LED_BUILTIN, HIGH);
+    delay(1000);
+    digitalWrite(LED_BUILTIN, LOW);
+    delay(1000);
+}
+</code>
+            </pre>
+		</section>
+		<section id="contact">
+			<h2>Contact</h2>
+			<p>Pour toute question, vous pouvez me contacter à <a href="mailto:email@example.com">email@example.com</a>.
+			</p>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2024 Mon Projet Arduino</p>
+	</footer>
 </body>
+
 </html>

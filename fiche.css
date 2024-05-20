@@ -1,0 +1,16 @@
+body{
+	color:red;
+	margin:0px;
+	background:white;
+	}
+#header{
+	height:150px;
+	background:#556B2F;
+	}
+.gif{
+	transition:transform 2s ease-in-out;
+	}
+.gif:hover{
+	transform:scale(10.2);
+	center:50%;
+}
